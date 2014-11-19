@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+		>
+	<com.elight.teaching.custom.EmotionsEditText
+			android:id="@+id/fragment_event_add_edit_content"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textMultiLine"
+			android:gravity="left|top"
+			android:minLines="6"
+			android:background="@drawable/selector_edittext"
+			android:paddingLeft="4dp"
+			android:paddingRight="4dp"
+			android:layout_marginTop="6dp"
+			android:layout_marginRight="6dp"
+			android:layout_marginLeft="6dp"
+			android:hint="说说这段风景的故事吧"
+			>
+
+		<requestFocus />
+	</com.elight.teaching.custom.EmotionsEditText>
+
+
+	<LinearLayout
+			android:id="@+id/fragment_event_add_location_emotions"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:orientation="horizontal"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="4dp"
+			android:layout_below="@id/fragment_event_add_edit_content"
+			android:weightSum="5">
+		<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_margin="2dp"
+				android:layout_weight="4"
+				android:background="@drawable/fragment_event_add_publisher_poi_text_bg"
+				android:orientation="horizontal">
+			<Button
+					android:id="@+id/fragment_event_add_publisher_poi_place"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:background="#00000000"
+					android:drawablePadding="3dp"
+					android:ellipsize="start"
+					android:gravity="left|center_vertical"
+					android:singleLine="true"
+					android:text="正在定位。。。"
+					android:textColor="#ff000000"
+					android:drawableLeft="@drawable/fragment_event_add_publisher_poi_icon"/>
+			<ImageView
+					android:id="@+id/fragment_event_add_publisher_poi_sperator"
+					android:layout_width="1dp"
+					android:layout_height="match_parent"
+					android:src="@drawable/fragment_event_add_publisher_poi_area_sperator"/>
+			<ImageView
+					android:id="@+id/fragment_event_add_publisher_poi_list"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:src="@drawable/fragment_event_add_publisher_poi_list_icon"
+					android:visibility="invisible"/>
+		</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_margin="5dp"
+			android:layout_weight="1"
+			android:orientation="horizontal">
+
+		<Button
+				android:id="@+id/fragment_event_add_btn_chat_location"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:background="@drawable/btn_chat_add_pointer"
+				android:gravity="center"
+				android:layout_marginLeft="3dp"
+				android:layout_marginRight="3dp"
+				android:onClick="toAction" />
+
+		<Button
+				android:id="@+id/fragment_event_add_btn_chat_emotions"
+				android:layout_width="30dp"
+				android:layout_height="30dp"
+				android:background="@drawable/btn_chat_emo_selector"
+				android:gravity="center"
+				android:onClick="toAction" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_below="@id/fragment_event_add_location_emotions">
+		<LinearLayout
+				android:id="@+id/fragment_event_add_emotions_content"
+				android:layout_width="match_parent"
+				android:layout_height="120dp"
+				android:orientation="vertical"
+				android:visibility="gone">
+			<android.support.v4.view.ViewPager
+					android:id="@+id/fragment_event_add_view_pager_emotions"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"/>
+		</LinearLayout>
+		<LinearLayout
+				android:id="@+id/fragment_event_add_images_content"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:visibility="visible">
+			<GridView
+					android:id="@+id/fragment_event_add_grid_view"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dp"
+					android:layout_marginLeft="7dp"
+					android:layout_marginRight="7dp"
+					android:horizontalSpacing="3dp"
+					android:numColumns="4"
+					android:scrollbars="none"
+					android:verticalSpacing="5dp">
+			</GridView>
+		</LinearLayout>
+	</LinearLayout>
+
+    <Button
+        android:id="@+id/fragment_event_add_commit_edit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="发送"
+        android:textSize="25sp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/darkgreen"/>
+
+</RelativeLayout>

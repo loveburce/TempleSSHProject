@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="user_type_name">
+		<item>教师</item>
+		<item>家长</item>
+		<item>学生</item>
+	</string-array>
+</resources>

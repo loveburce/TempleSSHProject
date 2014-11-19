@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+		android:background="@drawable/choose_bg">
+
+    <LinearLayout
+            android:id="@+id/user_login"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="#228b22"
+            android:layout_marginTop="130dp">
+        <Button
+                android:id="@+id/user_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="登录"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:background="#0000ff00"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/user_register"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="#228b22"
+            android:layout_marginTop="60dp">
+        <Button
+                android:id="@+id/user_register_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="注册"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:background="#0000ff00"/>
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/user_tourist"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="#228b22"
+            android:layout_marginTop="60dp">
+        <Button
+                android:id="@+id/user_tourist_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="游客"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:background="#0000ff00"/>
+    </LinearLayout>
+</LinearLayout>

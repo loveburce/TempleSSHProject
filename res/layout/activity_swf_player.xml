@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+	<FrameLayout
+	             android:layout_width="fill_parent"
+	             android:layout_height="fill_parent"
+	             android:orientation="vertical"
+	             tools:context=".MainActivity" >
+
+		<WebView
+				android:id="@+id/activity_swf_player_web_view"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:background="@android:color/white" />
+
+		<!--<ImageView-->
+				<!--android:id="@+id/ic_launcher"-->
+				<!--android:layout_width="fill_parent"-->
+				<!--android:layout_height="fill_parent"-->
+				<!--android:scaleType="fitXY"-->
+				<!--android:src="@color/white" />-->
+
+	</FrameLayout>
+
+
+	<ProgressBar
+			android:id="@+id/activity_swf_player_progress_bar"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:max="100"
+			android:progress="0"
+			android:secondaryProgress="0"
+			/>
+
+	<LinearLayout
+			android:id="@+id/activity_swf_player_ll"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+		<Button
+				android:id="@+id/activity_swf_player_player"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="播放"/>
+		<Button
+				android:id="@+id/activity_swf_player_pause"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="暂停"/>
+		<Button
+				android:id="@+id/activity_swf_player_stop"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="停止"/>
+		<Button
+				android:id="@+id/activity_swf_player_pre"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="上一首"/>
+		<Button
+				android:id="@+id/activity_swf_player_next"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="下一首"/>
+		<Button
+				android:id="@+id/activity_swf_player_full"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="全屏"/>
+		<Button
+				android:id="@+id/activity_swf_player_file"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="上一首"/>
+		<Button
+				android:id="@+id/activity_swf_player_exit"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="退出"/>
+	</LinearLayout>
+
+</LinearLayout>

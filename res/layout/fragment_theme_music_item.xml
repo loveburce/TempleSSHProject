@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:background="@color/greenyellow">
+	<ImageView
+			android:id="@+id/fragment_theme_music_image"
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:layout_gravity="center"
+			android:scaleType="fitXY"/>
+
+	<TextView
+			android:id="@+id/fragment_theme_music_title"
+			android:layout_width="match_parent"
+			android:layout_height="30dp"
+			android:text="第一课 古诗词"
+			android:textColor="#000000"
+			android:textSize="20sp"
+			android:gravity="center"/>
+</LinearLayout>

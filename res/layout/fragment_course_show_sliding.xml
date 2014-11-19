@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<ImageView style="@style/left_drawer_item_line" />
+
+	<ScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="0.0dip"
+			android:layout_weight="1.0" >
+
+		<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+
+			<RelativeLayout
+					android:id="@+id/pgc_btn"
+					style="@style/left_drawer_item_layout"
+					android:visibility="gone">
+
+				<TextView
+						android:id="@+id/pgc_name"
+						style="@style/left_drawer_item_text"
+						android:drawableLeft="@drawable/ic_drawer_pgc" />
+			</RelativeLayout>
+
+			<ImageView style="@style/left_drawer_item_line" />
+
+			<RelativeLayout
+					android:id="@+id/search_btn"
+					style="@style/left_drawer_item_layout" >
+
+				<TextView
+						style="@style/left_drawer_item_text"
+						android:drawableLeft="@drawable/ic_drawer_search"
+						android:text="@string/left_drawer_item_lectures" />
+			</RelativeLayout>
+
+			<ImageView style="@style/left_drawer_item_line" />
+
+			<RelativeLayout
+					android:id="@+id/favorite_btn"
+					style="@style/left_drawer_item_layout" >
+
+				<TextView
+						style="@style/left_drawer_item_text"
+						android:drawableLeft="@drawable/ic_drawer_favorite"
+						android:text="@string/left_drawer_item_chant" />
+			</RelativeLayout>
+
+			<ImageView style="@style/left_drawer_item_line" />
+
+			<RelativeLayout
+					android:id="@+id/message_btn"
+					style="@style/left_drawer_item_layout" >
+
+				<TextView
+						android:id="@+id/message_text"
+						style="@style/left_drawer_item_text"
+						android:drawableLeft="@drawable/ic_drawer_message"
+						android:text="@string/left_drawer_item_buildup" />
+
+				<TextView
+						android:id="@+id/top_message_count"
+						style="@style/left_drawer_count"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:layout_alignParentTop="true"
+						android:layout_marginLeft="25.0dip"
+						android:layout_marginTop="6.0dip"
+						android:layout_toRightOf="@id/message_text"
+						android:background="@drawable/left_drawer_count_bg" />
+			</RelativeLayout>
+
+			<ImageView style="@style/left_drawer_item_line" />
+
+			<RelativeLayout
+					android:id="@+id/offline_layout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" >
+
+				<RelativeLayout
+						android:id="@+id/offline_btn"
+						style="@style/left_drawer_item_layout" >
+
+					<ImageView
+							android:id="@+id/offline_icon"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentLeft="true"
+							android:layout_centerVertical="true"
+							android:layout_marginRight="25.0dip"
+							android:src="@drawable/ic_drawer_offline" />
+
+					<RelativeLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_toRightOf="@id/offline_icon"
+							android:minHeight="50.0dip" >
+
+						<TextView
+								android:id="@+id/offline_btn_text"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_marginTop="14.0dip"
+								android:text="@string/left_drawer_item_blog"
+								android:textColor="@color/left_drawer_item_text"
+								android:textSize="15.0sp" />
+
+						<TextView
+								android:id="@+id/offline_hint"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_below="@id/offline_btn_text"
+								android:layout_marginTop="2.0dip"
+								android:textColor="@color/left_drawer_offline_hint"
+								android:textSize="7.0sp"
+								android:visibility="gone" />
+					</RelativeLayout>
+				</RelativeLayout>
+
+				<ImageView
+						android:id="@+id/offline_progressbar"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignBottom="@id/offline_btn"
+						android:src="@drawable/left_drawer_download"
+						android:visibility="gone" />
+			</RelativeLayout>
+
+			<ImageView
+					android:id="@+id/offline_divider"
+					style="@style/left_drawer_item_line" />
+
+			<LinearLayout
+					android:id="@+id/app_activity_layout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:minHeight="50.0dip"
+					android:orientation="vertical"
+					android:visibility="visible" >
+
+				<RelativeLayout
+						android:id="@+id/app_activity_btn"
+						style="@style/left_drawer_item_layout" >
+
+					<TextView
+							android:id="@+id/app_activity_text"
+							style="@style/left_drawer_item_text"
+							android:layout_centerVertical="true"
+							android:drawableLeft="@drawable/left_drawer_activity_selector"
+							android:text="@string/left_drawer_item_poetry" />
+
+					<TextView
+							android:id="@+id/top_appactivity_count"
+							style="@style/left_drawer_count"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentLeft="true"
+							android:layout_alignParentTop="true"
+							android:layout_marginLeft="25.0dip"
+							android:layout_marginTop="6.0dip"
+							android:layout_toRightOf="@id/app_activity_text"
+							android:background="@drawable/left_drawer_count_bg" />
+				</RelativeLayout>
+
+				<ImageView style="@style/left_drawer_item_line" />
+			</LinearLayout>
+
+
+
+			<ImageView
+					android:id="@+id/appstore_line"
+					style="@style/left_drawer_item_line" />
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="10.0dip"
+			android:layout_marginLeft="19.0dip"
+			android:layout_weight="0.0"
+			android:gravity="center_vertical"
+			android:orientation="horizontal" >
+
+
+		<!-- myapp:thumb="@drawable/wiper_switch_slipper_btn" -->
+		<!-- myapp:track="@drawable/wiper_switch_btn" -->
+
+		<TextView
+				android:id="@+id/night_mode_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15.0dip"
+				android:textColor="@color/left_drawer_night_mode_text"
+				android:textSize="15.0sp" />
+	</LinearLayout>
+
+</LinearLayout>

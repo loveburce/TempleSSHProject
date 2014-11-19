@@ -1,0 +1,160 @@
+<resources>
+
+    <string name="app_name">育灵童教学助手</string>
+    <string name="splash_version_info">育灵童客户端\n\nVersion 1.0.0</string>
+	<string name="action_settings">Settings</string>
+
+    <!-- 菜单 -->
+    <string name="menu_setting">设置</string>
+    <string name="menu_history">浏览历史</string>
+    <string name="menu_feedback">意见反馈</string>
+    <string name="menu_help">帮助</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_exit">退出</string>
+    <!-- 菜单 -->
+
+
+	<string name="pull_to_refresh_pull_label">下拉刷新</string>
+	<string name="pull_to_refresh_release_label">松开后刷新</string>
+	<string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+	<string name="pull_to_refresh_footer_release_label">松开后加载</string>
+	<string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+	<string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+
+
+<!-- 商品分类 -->
+<string name="category">全部分类</string>
+
+    <!-- 个人中心 -->
+    <string name="personal_title">我的教学助手</string>
+    <string name="personal_more">更多</string>
+    <string name="personal_welcome">欢迎来到育灵童教学助手</string>
+    <string name="personal_login">登录</string>
+    <string name="personal_fast_search">订单状态速查</string>
+    <string name="personal_wait_pay">待付款订单</string>
+    <string name="personal_all_order">全部订单</string>
+    <string name="personal_my_focus">我的关注</string>
+    <string name="personal_comment">商品评价/晒单</string>
+    <string name="personal_information">消息中心</string>
+    <string name="personal_quick_buy">轻松购</string>
+    <string name="personal_account">账户安全</string>
+    <string name="personal_return_back">返修/退换货</string>
+    <string name="personal_order_center">订单中心</string>
+    <string name="personal_account_center">账户中心</string>
+    <string name="personal_customer_service">客户服务</string>
+    <string name="personal_infomation_service">预约电话服务</string>
+    
+    <string name="personal_favour">猜你喜欢</string>
+    <string name="personal_favour_introduce">三星Glaxy_S4是一款不错的手机，大屏，霸气。</string>
+    <string name="personal_quit">退出登录</string>
+    <!-- 个人中心 -->
+
+<!-- 登陆界面 -->
+	<string name="login_username_hint">请输入用户名&#8230;</string>
+	<string name="login_password_hint">请输入密码&#8230;</string>
+	<string name="login_email_hint">请在此输入密码&#8230;</string>
+	<string name="login">登录</string>
+	<string name="register">注册</string>
+	<string name="register_txt1">还没有账号？</string>
+	<string name="register_txt2">立即注册 ></string>
+	<string name="login_account">账号 </string>
+	<string name="login_pwd">密码 </string>
+	<string name="login_email">确认密码 </string>
+	<string name="choose_date">日期选择 </string>
+	<string name="choose_address">地址选择 </string>
+	<string name="toast_error_user_type_null">用户类型不能为空</string>
+	<string name="toast_error_password_null">密码不能为空</string>
+	<string name="toast_error_username_null">用户名不能为空</string>
+	<string name="toast_error_comfirm_password">输入的两次密码不一致</string>
+
+<!--  购物车 -->
+	<string name="message_search_hint">搜索&#8230;</string>
+    
+<!--   更多 -->
+<string name="more">更多</string>
+
+<string name="more_history">浏览记录</string>
+<string name="more_seting">设置</string>
+<string name="more_help">帮助 </string>
+<string name="more_opinion">意见反馈</string>
+<string name="more_aboutus">关于我们</string>
+<string name="more_update">检测更新</string>
+<string name="more_exit">退出</string>
+<string name="more_apps">应用推荐</string>
+
+
+<!-- 注册 -->
+<string name="registerinfo">输入手机号后，点击"获取密码"，系统会自动向你的手机发送一条短信</string>
+<string name="register_tip">【提示】\n 1.使用手机号注册免费 \n 2.此手机号用来登录京东\n 3.你还可以选择其他注册方式</string>
+<string name="register_in_normal">普通用户注册</string>
+<string name="register_normal_useraccount">帐户名：</string>
+<string name="register_normal_useraccount_hint">请输入你的手机号</string>
+<string name="register_normal_email">邮箱：</string>
+<string name="register_normal_email_hint">请输入邮箱帐号</string>
+<string name="register_normal_password">密码：</string>
+<string name="register_normal_password_hint">请输入密码</string>
+<string name="register_normal_repassword">确认密码：</string>
+<string name="register_normal_repassword_hint">请输入确认密码</string>
+
+<!-- fragment course show sliding-->
+	<string name="left_drawer_item_lectures">听课文</string>
+	<string name="left_drawer_item_chant">诵读</string>
+	<string name="left_drawer_item_buildup">日积月累</string>
+	<string name="left_drawer_item_blog">博文</string>
+	<string name="left_drawer_item_poetry">诗歌赏读</string>
+
+	<!-- 视屏工具初始化-->
+	<string name="init_decoders">正在进行第一次解压解码包...</string>
+	<string name="vitamio_theme_app_name">VPlayer codec</string>
+	<string name="VideoView_error_title">Cannot play video</string>
+	<string name="VideoView_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+		this device.</string>
+	<string name="VideoView_error_text_unknown">对不起,这个视频不能播放。</string>
+	<string name="VideoView_error_button">OK</string>
+
+	<string name="vitamio_name">Vitamio</string>
+	<string name="vitamio_init_decoders">Initializing decoders…</string>
+	<string name="vitamio_videoview_error_title">Cannot play video</string>
+	<string name="vitamio_videoview_error_text_invalid_progressive_playback">Sorry, this video is not valid for streaming to
+		this device.</string>
+	<string name="vitamio_videoview_error_text_unknown">Sorry, this video cannot be played.</string>
+	<string name="vitamio_videoview_error_button">OK</string>
+	<string name="mediacontroller_play_pause">Play/Pause</string>
+	<string name="video_layout_loading">正在缓冲...</string>
+
+	<!-- 上拉下拉刷新的 控件-->
+	<string name="xlistview_header_hint_normal">下拉刷新</string>
+	<string name="xlistview_header_hint_ready">松开刷新数据</string>
+	<string name="xlistview_header_hint_loading">正在加载&#8230;</string>
+	<string name="xlistview_header_last_time">上次更新时间：</string>
+	<string name="xlistview_footer_hint_normal">查看更多</string>
+	<string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+	<string name="voice_up_tips">手指上滑,取消发送</string>
+	<string name="voice_cancel_tips">松开手指，取消发送</string>
+	<string name="voice_seconds_tips">还可以说%1$s秒</string>
+	<string name="voice_short_tips">录音时间太短</string>
+
+	<!-- dialog -->
+	<string name="add_avator">头像</string>
+	<string name="add_nick">昵称</string>
+	<string name="add_name">账号</string>
+	<string name="add_name_hint">请输入昵称&#8230;</string>
+	<string name="add_gender">性别</string>
+
+	<string name="set_notify">接收新消息通知</string>
+	<string name="set_myinfo">个人资料</string>
+	<string name="set_blacklist">黑名单</string>
+	<string name="set_voice">声音</string>
+	<string name="set_vibrate">震动</string>
+	<string name="tips">提示</string>
+	<string name="network_tips">当前网络不可用,请检查您的网络!</string>
+
+	<string name="longclick_speak">长按说话</string>
+	<string name="picture">照片</string>
+	<string name="camera">拍摄</string>
+	<string name="location">位置</string>
+
+	<string name="show_notice">初始化完成！</string>
+
+</resources>

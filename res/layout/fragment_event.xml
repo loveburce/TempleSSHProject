@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+	<RelativeLayout
+			android:id="@+id/fragment_event_list_topbar"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:background="@color/forestgreen"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:visibility="visible">
+
+		<ImageView
+				android:id="@+id/fragment_event_list_topbar_avatar"
+				android:layout_width="45dp"
+				android:layout_height="45dp"
+				android:src="@drawable/head"
+				android:scaleType="centerInside"
+				android:layout_centerVertical="true"/>
+
+		<TextView
+				android:id="@+id/fragment_event_list_topbar_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:text="联系人动态"
+				android:textColor="#ffffff"
+				android:textSize="20sp"
+				android:typeface="monospace"
+				android:textStyle="bold"/>
+
+		<ImageView
+				android:id="@+id/fragment_event_list_topbar_addEvent"
+				android:layout_width="45dp"
+				android:layout_height="45dp"
+				android:src="@drawable/ic_action_edit"
+				android:scaleType="fitXY"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="8dp"/>
+	</RelativeLayout>
+
+
+	<FrameLayout
+			android:id="@+id/fragment_event_content"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1" >
+	</FrameLayout>
+
+</LinearLayout>

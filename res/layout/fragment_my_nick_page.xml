@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_personal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/android_layout_bg" >
+
+    <RelativeLayout
+        android:id="@+id/personal_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/forestgreen" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="@string/personal_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/medium_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/personal_top_layout" >
+
+        <ImageView
+            android:id="@+id/personal_background_image"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="-100dp"
+            android:background="@drawable/head" />
+
+        <com.elight.teaching.widgets.CustomScrollView
+            android:id="@+id/personal_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical" >
+
+
+	                <TextView
+			                android:id="@+id/fragment_my_nick_page_name"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_gravity="center_horizontal"
+			                android:layout_marginTop="20dp"
+			                android:text="@string/personal_welcome"
+			                android:textColor="@color/white"
+			                android:textSize="@dimen/medium_text_size" />
+
+	                <Button
+			                android:id="@+id/personal_login_button"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_gravity="center_horizontal"
+			                android:layout_marginTop="5dp"
+			                android:background="@drawable/my_personal_click_login"
+			                android:gravity="center"
+			                android:text="点击更换主题"
+			                android:textColor="@color/login_button"
+			                android:textSize="@dimen/small_text_size"
+			                android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/android_layout_bg"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/PersonalCenterText"
+                        android:text="个人资料" />
+
+                  <LinearLayout style="@style/PersonalMainLayoutStyle" >
+
+                        <RelativeLayout style="@style/PersonalTopStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_01"
+                                style="@style/PersonalIconStyle"
+                                android:layout_width="36dp"
+                                android:layout_height="38dp"
+                                android:src="@drawable/android_personel_quickly_order" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_01"
+                                android:text="昵称设置" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/register_bottom_arrow" />
+                        </RelativeLayout>
+
+                        <View style="@style/PersonalLine" />
+
+                        <RelativeLayout style="@style/PersonalNormalStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_02"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_personel_waitpay_order" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_02"
+                                android:text="头像设置" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/register_bottom_arrow" />
+                        </RelativeLayout>
+
+                        <View style="@style/PersonalLine" />
+
+                        <RelativeLayout style="@style/PersonalBottomStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_03"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_personel_all_order" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_03"
+                                android:text="联系号码" />
+
+                            <ImageView
+                                style="@style/PersonalRightIconStyle"
+                                android:src="@drawable/register_bottom_arrow" />
+                        </RelativeLayout>
+
+	                  <View style="@style/PersonalLine" />
+
+	                  <RelativeLayout style="@style/PersonalBottomStyle" >
+
+		                  <ImageView
+				                  android:id="@+id/personal_icon_031"
+				                  style="@style/PersonalIconStyle"
+				                  android:src="@drawable/android_personel_all_order" />
+
+		                  <TextView
+				                  style="@style/PersonalTextStyle"
+				                  android:layout_toRightOf="@id/personal_icon_031"
+				                  android:text="年龄设置" />
+
+		                  <ImageView
+				                  style="@style/PersonalRightIconStyle"
+				                  android:src="@drawable/register_bottom_arrow" />
+	                  </RelativeLayout>
+
+	                  <View style="@style/PersonalLine" />
+
+	                  <RelativeLayout style="@style/PersonalBottomStyle" >
+
+		                  <ImageView
+				                  android:id="@+id/personal_icon_033"
+				                  style="@style/PersonalIconStyle"
+				                  android:src="@drawable/android_personel_all_order" />
+
+		                  <TextView
+				                  style="@style/PersonalTextStyle"
+				                  android:layout_toRightOf="@id/personal_icon_033"
+				                  android:text="位置设置" />
+
+		                  <ImageView
+				                  style="@style/PersonalRightIconStyle"
+				                  android:src="@drawable/register_bottom_arrow" />
+	                  </RelativeLayout>
+
+	                  <View style="@style/PersonalLine" />
+
+	                  <RelativeLayout style="@style/PersonalBottomStyle" >
+
+		                  <ImageView
+				                  android:id="@+id/personal_icon_034"
+				                  style="@style/PersonalIconStyle"
+				                  android:src="@drawable/android_personel_all_order" />
+
+		                  <TextView
+				                  style="@style/PersonalTextStyle"
+				                  android:layout_toRightOf="@id/personal_icon_034"
+				                  android:text="性别设置" />
+
+		                  <CheckBox
+				                  android:id="@+id/sex_choice_switch"
+				                  style="@style/PersonalRightIconStyle"
+				                  android:layout_width="70dp"
+				                  android:scaleType="centerInside"
+				                  android:button="@drawable/selector_sex_choice"
+				                  android:checked="true" />
+
+	                  </RelativeLayout>
+
+	                  <View style="@style/PersonalLine" />
+
+	                  <RelativeLayout style="@style/PersonalBottomStyle" >
+
+		                  <ImageView
+				                  android:id="@+id/personal_icon_035"
+				                  style="@style/PersonalIconStyle"
+				                  android:src="@drawable/android_personel_all_order" />
+
+		                  <TextView
+				                  style="@style/PersonalTextStyle"
+				                  android:layout_toRightOf="@id/personal_icon_035"
+				                  android:text="电话是否可见" />
+
+		                  <CheckBox
+				                  android:id="@+id/settings_push_switch"
+				                  style="@style/PersonalRightIconStyle"
+				                  android:layout_width="70dp"
+				                  android:scaleType="centerInside"
+				                  android:button="@drawable/selector_push_switch"
+				                  android:checked="true" />
+
+	                  </RelativeLayout>
+
+	                  <View style="@style/PersonalLine" />
+
+	                  <RelativeLayout style="@style/PersonalBottomStyle" >
+
+		                  <ImageView
+				                  android:id="@+id/personal_icon_036"
+				                  style="@style/PersonalIconStyle"
+				                  android:src="@drawable/android_personel_all_order" />
+
+		                  <TextView
+				                  style="@style/PersonalTextStyle"
+				                  android:layout_toRightOf="@id/personal_icon_036"
+				                  android:text="位置是否可见" />
+
+		                  <CheckBox
+				                  android:id="@+id/settings_location_switch"
+				                  style="@style/PersonalRightIconStyle"
+				                  android:layout_width="70dp"
+				                  android:scaleType="centerInside"
+				                  android:button="@drawable/selector_push_switch"
+				                  android:checked="true" />
+	                  </RelativeLayout>
+
+                    </LinearLayout> 
+
+                    <TextView
+                        style="@style/PersonalCenterText"
+                        android:text="系统设置" />
+
+                    <LinearLayout style="@style/PersonalMainLayoutStyle" >
+
+                        <RelativeLayout style="@style/PersonalTopStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_04"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_my_jd_collects" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_04"
+                                android:text="是否接收通知" />
+
+	                        <CheckBox
+			                        android:id="@+id/settings_message_switch"
+			                        style="@style/PersonalRightIconStyle"
+			                        android:layout_width="70dp"
+			                        android:scaleType="centerInside"
+			                        android:button="@drawable/selector_push_switch"
+			                        android:checked="true" />
+                        </RelativeLayout>
+
+                        <View style="@style/PersonalLine" />
+
+                        <RelativeLayout style="@style/PersonalNormalStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_05"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_my_jd_discuss" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_05"
+                                android:text="声音设置" />
+
+	                        <CheckBox
+			                        android:id="@+id/settings_sound_switch"
+			                        style="@style/PersonalRightIconStyle"
+			                        android:layout_width="70dp"
+			                        android:scaleType="centerInside"
+			                        android:button="@drawable/selector_push_switch"
+			                        android:checked="true" />
+                        </RelativeLayout>
+
+                        <View style="@style/PersonalLine" />
+
+                        <RelativeLayout style="@style/PersonalBottomStyle" >
+
+                            <ImageView
+                                android:id="@+id/personal_icon_06"
+                                style="@style/PersonalIconStyle"
+                                android:src="@drawable/android_my_jd_messages" />
+
+                            <TextView
+                                style="@style/PersonalTextStyle"
+                                android:layout_toRightOf="@id/personal_icon_06"
+                                android:text="震动设置" />
+
+	                        <CheckBox
+			                        android:id="@+id/settings_shake_switch"
+			                        style="@style/PersonalRightIconStyle"
+			                        android:layout_width="70dp"
+			                        android:scaleType="centerInside"
+			                        android:button="@drawable/selector_push_switch"
+			                        android:checked="true" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout> 
+
+
+      				<Button
+      				    android:id="@+id/personal_exit"
+      				    android:layout_width="fill_parent"
+      				    android:layout_height="match_parent"
+      				    android:layout_marginBottom="14dp"
+      				    android:layout_marginLeft="25dp"
+      				    android:layout_marginRight="25dp"
+      				    android:layout_marginTop="14dp"
+      				    android:gravity="center"
+      				    android:padding="4dp"
+      				    android:text="@string/personal_quit"
+      				    android:textColor="#fff"
+      				    android:textSize="18sp" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+        </com.elight.teaching.widgets.CustomScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

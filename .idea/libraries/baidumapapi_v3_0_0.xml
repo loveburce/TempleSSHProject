@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="baidumapapi_v3_0_0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/baidumapapi_v3_0_0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/locSDK_4.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/photoview-library-1.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

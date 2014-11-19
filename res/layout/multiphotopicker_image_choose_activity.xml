@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:background="@color/lightgray">
+
+	<include
+		android:id="@+id/multiphotopicker_image_choose_title_bar"
+		layout="@layout/multiphotopicker_header_titlebar"/>
+
+	<GridView
+			android:id="@+id/multiphotopicker_image_choose_grid_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:horizontalSpacing="8dp"
+			android:numColumns="3"
+			android:scrollbars="none"
+			android:verticalSpacing="8dp"
+			android:layout_below="@id/multiphotopicker_image_choose_title_bar"/>
+
+	<Button
+			android:id="@+id/multiphotopicker_image_choose_finish_btn"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:layout_alignParentBottom="true"
+			android:background="@drawable/multiphotopicker_btn"
+			android:text="完成"
+			android:textSize="20sp"
+			android:textColor="@color/gray"/>
+
+</RelativeLayout>

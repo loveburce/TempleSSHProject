@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:orientation="horizontal"
+			android:background="@color/forestgreen">
+
+		<RelativeLayout
+				android:id="@+id/rl_column"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:layout_weight="1.0">
+
+			<com.elight.teaching.custom.ColumnHorizontalScrollView
+					android:id="@+id/mColumnHorizontalScrollView"
+					android:layout_width="match_parent"
+					android:layout_height="50dp"
+					android:scrollbars="none">
+
+				<LinearLayout
+						android:id="@+id/mRadioGroup_content"
+						android:layout_width="fill_parent"
+						android:layout_height="50dp"
+						android:layout_centerVertical="true"
+						android:gravity="center_vertical"
+						android:orientation="horizontal"
+						android:paddingLeft="15.0dip"
+						android:paddingRight="15.0dip"/>
+			</com.elight.teaching.custom.ColumnHorizontalScrollView>
+
+			<ImageView
+					android:id="@+id/shade_left"
+					android:layout_width="10.0dip"
+					android:layout_height="50dp"
+					android:layout_alignParentLeft="true"
+					android:layout_centerVertical="true"
+					android:visibility="gone"/>
+
+			<ImageView
+					android:id="@+id/shade_right"
+					android:layout_width="10.0dip"
+					android:layout_height="50dp"
+					android:layout_alignParentRight="true"
+					android:layout_centerVertical="true"
+					android:visibility="visible"/>
+		</RelativeLayout>
+
+		<LinearLayout
+				android:id="@+id/ll_more_columns"
+				android:layout_width="wrap_content"
+				android:layout_height="50dp">
+
+			<ImageView
+					android:id="@+id/button_more_columns"
+					android:layout_width="1.0dip"
+					android:layout_height="50dp"
+					android:layout_gravity="center_vertical"/>
+		</LinearLayout>
+	</LinearLayout>
+
+
+	<android.support.v4.view.ViewPager
+			android:id="@+id/mViewPager"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+
+</LinearLayout>

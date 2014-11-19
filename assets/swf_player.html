@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" http-equiv="CONTENT-TYPE" content="text/html">
+    <title>Android Flash Player</title>
+    <script type="text/javascript">
+        var playOver = true;    //直接播放
+        var total;              //定义Flash影片的总帧数
+        var frame_number = -1;  //定义Flash影片当前帧数
+
+        //动态显示播放影片的当前帧/总帧数(进度条显示)
+        function showCount(){
+            //已测可用CallJava.consoleFlashProgress(5);
+            var num = 1+fmovie.CurrentFrame();
+            var millisec = 150;
+            if(num < frame_number || num == total){
+                CallJava.consoleFlashProgress(100);
+                millisec = 1000;
+            } else{
+                CallJava.consoleFlashProgress(100*(num/total));
+            }
+
+            frame_number = num;
+            setTimeout(showCount,millisec);
+        }
+
+        function isLoad(){
+            if(fmovie.PercentLoadede() == 100)
+                frame_number = 0;
+        }
+
+        //加载影片
+        function Load(){
+            if(frame_number >= 0){
+                total = fmovie.TotalFrames();
+                if(player && total>1){
+                    Paly();
+                }
+                CallJava.FlashLoaded();
+                setTimeout(showCount,100);
+            }else{
+                setTimeout(Load, 100);
+                setTimeout(isLoad, 50);
+            }
+        }
+
+        //播放影片
+        function Play(){
+            playOver = true;
+            fmovie.Play();
+        }
+
+        //暂停播放
+        function Pause(){
+            fmovie.StopPlay();
+        }
+
+        //影片高宽
+        function SetWH(x, y){
+            var m = document.getElementById("fmovie");
+            m.height;
+        }
+        setTimeout(Load, 100);
+    </script>
+</head>
+<body leftmargin=0 topmargin=0 rightmargin=0 bottommargin=0>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0"
+        align="middle">
+    <param name="movie" value="about:blank" />
+    <param name="quality" value="high" />
+    <embed src="flash.swf" bgcolor="#FFFFFF" id="fmovie" height=400 width="100%"></embed>
+</object>
+</body>
+</html>
